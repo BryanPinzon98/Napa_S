@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 
@@ -42,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 } catch (InterruptedException e) {
                 } finally {
-                    Intent newIntent = new Intent(LoginActivity.this, MainLayoutActivity.class);
+                    Intent newIntent = new Intent(LoginActivity.this, ProjectsActivity.class);
                     startActivity(newIntent);
                     LoginActivity.this.finish();
                 }

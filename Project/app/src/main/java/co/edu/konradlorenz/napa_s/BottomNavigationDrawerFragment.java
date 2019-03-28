@@ -39,15 +39,6 @@ public class BottomNavigationDrawerFragment extends BottomSheetDialogFragment {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.nav_projects_option:
-                        Toast.makeText(getContext(), "Projects Option Selected", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.nav_sprints_option:
-                        Toast.makeText(getContext(), "Sprints Option Selected", Toast.LENGTH_SHORT).show();
-                        return true;
-                    case R.id.nav_notes_option:
-                        Toast.makeText(getContext(), "Notes Option Selected", Toast.LENGTH_SHORT).show();
-                        return true;
                     case R.id.nav_logout_option:
                         Intent newIntent = new Intent(getContext(), LoginActivity.class);
                         startActivity(newIntent);
