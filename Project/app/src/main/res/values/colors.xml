@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#80D8FF</color>
+    <color name="colorPrimaryDark">#448AFF</color>
     <color name="colorAccent">#D81B60</color>
     <color name="transparentFont">#4dffffff</color>
     <color name="com_facebook_likeview_text_color">#6a7180</color>
