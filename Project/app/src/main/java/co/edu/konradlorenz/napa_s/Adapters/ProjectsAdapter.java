@@ -73,7 +73,11 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.MyView
         ProjectTabletDetailFragment pTDF = new ProjectTabletDetailFragment();
         pTDF.setArguments(bundle);
 
-        manager.beginTransaction().add(id, pTDF).commit();
+        if(id == R.id.projects_fragment){
+            manager.beginTransaction().add(id, pTDF).addToBackStack(null).commit();
+        }else{
+            manager.beginTransaction().add(id, pTDF).commit();
+        }
     }
 
     @Override
