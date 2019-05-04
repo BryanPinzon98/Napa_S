@@ -1,12 +1,16 @@
-package co.edu.konradlorenz.napa_s;
+package co.edu.konradlorenz.napa_s.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import co.edu.konradlorenz.napa_s.Fragments.PasswordRecoveryFragment;
+import co.edu.konradlorenz.napa_s.R;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -24,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void findMaterialElements() {
         loginProgressBar = findViewById(R.id.loading_spinner);
-        loginProgressBar.setVisibility(View.GONE);
     }
 
     public void openMainActivity(View view) {
@@ -41,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 } catch (InterruptedException e) {
                 } finally {
-                    Intent newIntent = new Intent(LoginActivity.this, ProjectsActivity.class);
+                    Intent newIntent = new Intent(LoginActivity.this, ProjectsContainerActivity.class);
                     startActivity(newIntent);
                     LoginActivity.this.finish();
                 }

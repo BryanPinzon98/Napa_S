@@ -5,4 +5,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- New Strings -->
+    <string name="app_name_title">Napa S</string>
+    <string name="input_layout_username_text">Username</string>
+    <string name="input_layout_password_text">Password</string>
+    <string name="sign_text">Sign In</string>
+    <string name="OR_text">    OR    </string>
 </resources>

@@ -10,4 +10,492 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <!-- New Styles -->
+
+    <style name="MatchParentStyle.colorPrimaryDark">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Login Little Labels -->
+    <style name="Transparent_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/transparent_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Bold_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!-- -->
+
+    <!-- Login Social Button Style -->
+    <style name="MatchWrapStyle.SocialButtons">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:onClick">openMainActivity</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <!-- -->
+
+    <!-- Linear Layout Styles -->
+    <style name="MatchWrapStyle.LinearVerticalStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWrapStyle.LinearHorizontalStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapMatchStyle.LinearHorizontalStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchParentStyle.LinearVerticalStyle">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchParentStyle.LinearHorizontalStyle">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- -->
+
+    <!-- Height and Match Styles -->
+    <style name="MatchParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrapStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatchStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- -->
+
+    <!-- Projects Styles-->
+    <style name="MatchParentStyle.SelectProject_Label">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">Select your Project</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+    <!-- Login Styles -->
+
+    <!-- Both (Tablet and Mobile) -->
+    <style name="MatchParentStyle.NapaLogo">
+        <item name="android:layout_weight">2</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@mipmap/ic_logo</item>
+    </style>
+
+    <style name="MatchParentStyle.NapaLogo.Projects">
+        <!--<item name="android:onClick">runEffectBAB</item>-->
+    </style>
+
+    <!-- Progress Bar -->
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <!-- -->
+
+    <!-- Teléfono -->
+    <style name="MatchParentStyle.LoginScrollview">
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Linear Layout Styles -->
+    <style name="MatchWrapStyle.LinearVerticalStyle.Padding">
+        <item name="android:padding">40dp</item>
+    </style>
+
+    <style name="MatchWrapStyle.LinearVerticalStyle.Padding.Projects">
+        <item name="android:padding">30dp</item>
+    </style>
+
+    <style name="MatchWrapStyle.LinearVerticalStyle.Padding.Land">
+        <item name="android:padding">80dp</item>
+    </style>
+
+    <style name="WrapMatchStyle.LinearHorizontalStyle.ForgotPasswordStyle">
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="MatchParentStyle.LinearHorizontalStyle.OrDivision">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="LineDivisionStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:background">@color/line_division_color</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="SignUpLabel_Linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/sign_up_transparent</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="SignUpLabel_Linear.tablet">
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="SignUpLabel_Linear.tablet.720">
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="SignUpLabel_Linear.tablet.port">
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="SignUpLabel_Linear.tablet.port.720">
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="MatchParentStyle.LinearVerticalStyle.SocialButtons">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+    <!-- -->
+
+    <style name="MatchParentStyle.NapaName">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">fill_vertical</item>
+        <item name="android:text">@string/app_name_title</item>
+        <item name="android:textSize">@dimen/mobile_napa_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MatchWrapStyle.ORText">
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/OR_text</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MatchWrapStyle.ORText.tablet">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.ORText.tablet.720">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.ORText.tablet.port">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.ORText.tablet.port.720">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Text Input -->
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:hint">@string/input_layout_username_text</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit">
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit.tablet">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit.tablet.720">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit.tablet.port">
+        <item name="android:layout_height">58dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit.tablet.port.720">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextInputLayout.Password" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:hint">@string/input_layout_password_text</item>
+    </style>
+
+    <style name="TextInputLayout.Password.tablet">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="MatchWrapStyle.TextInputEdit.Password">
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Transparent_Text.ForgotAccount">
+        <item name="android:text">Forgot your login details?</item>
+    </style>
+
+    <style name="Transparent_Text.ForgotAccount.tablet">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Transparent_Text.ForgotAccount.tablet.720">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="Transparent_Text.ForgotAccount.tablet.port">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Transparent_Text.ForgotAccount.tablet.port.720">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Transparent_Text.DontAccount">
+        <item name="android:text">Don’t have an account?</item>
+    </style>
+
+    <style name="Transparent_Text.DontAccount.tablet">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Transparent_Text.DontAccount.tablet.720">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="Transparent_Text.DontAccount.tablet.port">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Transparent_Text.DontAccount.tablet.port.720">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Bold_Text.Signing">
+        <item name="android:text">Get help signing in</item>
+        <item name="android:onClick">openDialogFragment</item>
+    </style>
+
+    <style name="Bold_Text.Signing.tablet">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Bold_Text.Signing.tablet.720">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="Bold_Text.Signing.tablet.port">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Bold_Text.Signing.tablet.port.720">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="Bold_Text.SignUp">
+        <item name="android:text">Sign up</item>
+        <item name="android:onClick">signUpHandler</item>
+    </style>
+
+    <style name="Bold_Text.SignUp.tablet">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="Bold_Text.SignUp.tablet.720">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="Bold_Text.SignUp.tablet.port">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Bold_Text.SignUp.tablet.port.720">
+        <item name="android:textSize">19sp</item>
+    </style>
+    <!-- -->
+
+    <!-- Buttons Styles -->
+    <style name="MatchWrapStyle.SignButtonStyle">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:onClick">openMainActivity</item>
+        <item name="android:text">@string/sign_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MatchWrapStyle.SignButtonStyle.tablet">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SignButtonStyle.tablet.720">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SignButtonStyle.tablet.port">
+        <item name="android:layout_height">58dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SignButtonStyle.tablet.port.720">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Google">
+        <item name="android:background">@color/white</item>
+        <item name="android:drawableLeft">@drawable/googleg_standard_color_18</item>
+        <item name="android:text">Google</item>
+        <item name="android:textColor">@color/com_facebook_likeview_text_color</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Google.tablet">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Google.tablet.720">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Google.tablet.port">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Google.tablet.port.720">
+        <item name="android:layout_height">62dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Facebook">
+        <item name="android:background">@color/facebook_button_color</item>
+        <item name="android:drawableLeft">@drawable/com_facebook_button_login_logo</item>
+        <item name="android:text">Facebook</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Facebook.tablet">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Facebook.tablet.720">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Facebook.tablet.port">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Facebook.tablet.port.720">
+        <item name="android:layout_height">62dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Twitter">
+        <item name="android:background">@color/tw__composer_blue</item>
+        <item name="android:drawableLeft">@drawable/ic_twitter</item>
+        <item name="android:text">Twitter</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Twitter.tablet">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Twitter.tablet.720">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Twitter.tablet.port">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MatchWrapStyle.SocialButtons.Twitter.tablet.port.720">
+        <item name="android:layout_height">62dp</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- -->
+
+    <!-- Login Tablet Style -->
+    <style name="MatchParentStyle.LoginScrollview.Tablet">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="MatchWrapStyle.LinearVerticalStyle.Padding.Tablet">
+        <item name="android:padding">120dp</item>
+    </style>
+
+    <style name="MatchWrapStyle.LinearVerticalStyle.Padding.Tablet.Port">
+        <item name="android:padding">60dp</item>
+    </style>
+
+    <style name="MatchParentStyle.NapaName.tablet">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="MatchParentStyle.NapaName.tablet.720">
+        <item name="android:textSize">80sp</item>
+    </style>
+
+    <style name="MatchParentStyle.NapaName.tablet.port">
+        <item name="android:textSize">45sp</item>
+    </style>
+
+    <style name="MatchParentStyle.NapaName.tablet.port.720">
+        <item name="android:textSize">55sp</item>
+    </style>
+    <!-- -->
+
+    <!-- -->
+
 </resources>

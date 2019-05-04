@@ -12,22 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateProjectActivity"></activity>
-        <activity android:name=".TaskDetailActivity"/>
+        <activity android:name=".Activities.ProjectsContainerActivity"/>
+        <activity android:name=".Fragments.ProjectTabletDetailFragment"/>
+        <activity android:name=".Activities.CreateProjectActivity"></activity>
+        <activity android:name=".Activities.TaskDetailActivity"/>
         <activity
-            android:name=".SprintsActivity"
-            android:parentActivityName=".ProjectsActivity" />
+            android:name=".Activities.SprintsActivity"/>
         <activity
-            android:name=".ProfileActivity"
-            android:parentActivityName=".ProjectsActivity"
+            android:name=".Activities.ProfileActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ProjectsActivity"
+            android:name=".Activities.RegisterActivity"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".RegisterActivity"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

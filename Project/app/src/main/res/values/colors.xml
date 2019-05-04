@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Project Colors -->
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!-- -->
+
+    <!-- Own Colors-->
     <color name="transparentFont">#4dffffff</color>
     <color name="com_facebook_likeview_text_color">#6a7180</color>
     <color name="tw__composer_blue">#ff1da1f2</color>
@@ -12,4 +16,8 @@
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="com_facebook_likeboxcountview_text_color">#6a7180</color>
     <color name="com_facebook_button_background_color_focused_disabled">#84878c</color>
+    <color name="white">#ffffff</color>
+    <color name="line_division_color">#4dffffff</color>
+    <color name="facebook_button_color">#3B5991</color>
+    <color name="transparent_text">#80ffffff</color>
 </resources>
