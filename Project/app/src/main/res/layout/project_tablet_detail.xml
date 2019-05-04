@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enrique David Duárez Guette"
+                android:text="Enrique David Suárez Guette"
                 android:textSize="18sp"
                 android:textColor="@color/transparent_text"/>
 
