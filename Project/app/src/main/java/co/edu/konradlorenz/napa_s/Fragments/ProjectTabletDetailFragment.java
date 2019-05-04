@@ -9,6 +9,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.bumptech.glide.Glide;
+
 import co.edu.konradlorenz.napa_s.Entities.Project;
 import co.edu.konradlorenz.napa_s.R;
 
@@ -20,6 +23,7 @@ public class ProjectTabletDetailFragment extends Fragment {
     private TextView percentageCompleted;
     private Project projectSelected;
     private View actContext;
+    private Bundle projectData;
 
     @Nullable
     @Override
@@ -27,19 +31,25 @@ public class ProjectTabletDetailFragment extends Fragment {
         actContext = inflater.inflate(R.layout.project_tablet_detail, container, false);
 
         findMaterialElements();
-        //setUpLayout();
+        getBundleData();
+        setUpLayout();
 
         return actContext;
     }
 
-    /**
+    private void getBundleData() {
+
+        projectData = this.getArguments();
+        projectSelected = (Project) projectData.getSerializable("PROJECT");
+    }
+
+
     private void setUpLayout() {
-        projectSelected = (Project) getIntent().getSerializableExtra("PROJECT");
         projectTitle.setText(projectSelected.getProjectName());
         Glide.with(this).load(projectSelected.getPlaceHolder()).into(projectImage);
         percentageCompleted.setText(projectSelected.getPercentageComplete());
     }
-     **/
+
 
     private void findMaterialElements() {
         projectTitle = actContext.findViewById(R.id.detail_project_title);

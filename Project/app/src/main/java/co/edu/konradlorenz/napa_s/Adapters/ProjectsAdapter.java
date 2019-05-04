@@ -2,6 +2,7 @@ package co.edu.konradlorenz.napa_s.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +65,17 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.MyView
         return new MyViewHolder(view);
     }
 
+    private void loadProjectDetail(int id, FragmentManager manager, Project newProject){
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("PROJECT", newProject);
+
+        ProjectTabletDetailFragment pTDF = new ProjectTabletDetailFragment();
+        pTDF.setArguments(bundle);
+
+        manager.beginTransaction().add(id, pTDF).commit();
+    }
+
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
@@ -76,25 +88,15 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.MyView
                 FragmentManager manager = ((AppCompatActivity) actualContext).getSupportFragmentManager();
 
                 if(actualContext.getResources().getBoolean(R.bool.has_two_panes)){
-                    Toast.makeText(actualContext, "Está en modo Landscape", Toast.LENGTH_SHORT).show();
-                    manager.beginTransaction().add(R.id.tablet_detail_project_fragment, new ProjectTabletDetailFragment()).commit();
 
+                    Toast.makeText(actualContext, "Está en modo Landscape", Toast.LENGTH_SHORT).show();
+                    loadProjectDetail(R.id.tablet_detail_project_fragment, manager, newProject);
 
                 }else{
+
                     Toast.makeText(actualContext, "Está en modo Portrait", Toast.LENGTH_SHORT).show();
-
-                    manager.beginTransaction().add(R.id.projects_fragment, new ProjectTabletDetailFragment()).commit();
-
-                    /**
-                    Intent newIntent = new Intent(actualContext, ProjectTabletDetailFragment.class);
-                    newIntent.putExtra("PROJECT", newProject);
-                    actualContext.startActivity(newIntent);
-                     **/
+                    loadProjectDetail(R.id.projects_fragment, manager, newProject);
                 }
-
-                //Toast.makeText(actualContext, "Se ha oprimido el proyecto: " + newProject.getProjectName(), Toast.LENGTH_SHORT).show();
-                //Toast.makeText(actualContext, "Two Panes " + twoPanes, Toast.LENGTH_SHORT).show();
-
             }
         });
 

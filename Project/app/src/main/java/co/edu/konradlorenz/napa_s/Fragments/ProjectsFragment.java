@@ -1,4 +1,4 @@
-package co.edu.konradlorenz.napa_s.Activities;
+package co.edu.konradlorenz.napa_s.Fragments;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -22,18 +23,22 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+import co.edu.konradlorenz.napa_s.Activities.CreateProjectActivity;
+import co.edu.konradlorenz.napa_s.Activities.ProfileActivity;
+import co.edu.konradlorenz.napa_s.Activities.SprintsActivity;
 import co.edu.konradlorenz.napa_s.Adapters.ProjectsAdapter;
 import co.edu.konradlorenz.napa_s.Entities.Project;
 import co.edu.konradlorenz.napa_s.Fragments.BottomNavigationDrawerFragment;
 import co.edu.konradlorenz.napa_s.R;
 
-public class ProjectsActivity extends Fragment {
+public class ProjectsFragment extends Fragment {
 
     private RecyclerView projectsRecycler;
     private ProjectsAdapter projectsAdapter;
     private BottomAppBar projectsBottomAppBar;
     private FloatingActionButton floatingActionButton;
     private View actContext;
+
 
     @Nullable
     @Override
