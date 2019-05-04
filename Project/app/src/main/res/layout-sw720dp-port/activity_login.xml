@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentStyle"
+    android:id="@+id/login_layout"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+        style="@style/MatchParentStyle.LinearVerticalStyle">
+
+        <ScrollView
+            android:id="@+id/login_form"
+            style="@style/MatchParentStyle.LoginScrollview.Tablet">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                style="@style/MatchWrapStyle.LinearVerticalStyle.Padding.Tablet.Port">
+
+                <LinearLayout
+                    style="@style/MatchWrapStyle.LinearHorizontalStyle">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        style="@style/MatchParentStyle.NapaLogo"/>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/MatchParentStyle.NapaName.tablet.port.720"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout"
+                    app:boxBackgroundColor="@color/inputTextColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_text_input"
+                        style="@style/MatchWrapStyle.TextInputEdit.tablet.port.720"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.Password.tablet"
+                    app:boxBackgroundColor="@color/inputTextColor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_text_input"
+                        style="@style/MatchWrapStyle.TextInputEdit.tablet.port.720"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/email_sign_in_button"
+                    style="@style/MatchWrapStyle.SignButtonStyle.tablet.port.720"/>
+
+                <LinearLayout
+                    style="@style/WrapMatchStyle.LinearHorizontalStyle.ForgotPasswordStyle">
+
+                    <TextView
+                        style="@style/Transparent_Text.ForgotAccount.tablet.port.720"/>
+
+                    <TextView
+                        android:id="@+id/forgot_password_text"
+                        style="@style/Bold_Text.Signing.tablet.port.720"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchParentStyle.LinearHorizontalStyle.OrDivision">
+
+                    <LinearLayout
+                        style="@style/LineDivisionStyle"/>
+
+                    <TextView
+                        style="@style/MatchWrapStyle.ORText.tablet.port.720"/>
+
+                    <LinearLayout
+                        style="@style/LineDivisionStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchParentStyle.LinearVerticalStyle.SocialButtons">
+
+                    <Button
+                        android:id="@+id/google_login_button"
+                        style="@style/MatchWrapStyle.SocialButtons.Google.tablet.port.720"/>
+
+                    <Button
+                        style="@style/MatchWrapStyle.SocialButtons.Facebook.tablet.port.720"/>
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/MatchWrapStyle.SocialButtons.Twitter.tablet.port.720"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/SignUpLabel_Linear.tablet.port.720">
+
+                    <TextView
+                        style="@style/Transparent_Text.DontAccount.tablet.port.720"/>
+
+                    <TextView
+                        android:id="@+id/sign_up_button"
+                        style="@style/Bold_Text.SignUp.tablet.port.720"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        style="@style/ProgressBar"/>
+
+
+</RelativeLayout>

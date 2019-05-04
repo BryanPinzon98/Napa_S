@@ -1,4 +1,4 @@
-package co.edu.konradlorenz.napa_s;
+package co.edu.konradlorenz.napa_s.Activities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import java.io.IOException;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import co.edu.konradlorenz.napa_s.R;
 
 
 public class RegisterActivity extends AppCompatActivity {

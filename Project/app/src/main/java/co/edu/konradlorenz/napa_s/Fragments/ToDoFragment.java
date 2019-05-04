@@ -1,4 +1,4 @@
-package co.edu.konradlorenz.napa_s;
+package co.edu.konradlorenz.napa_s.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.google.android.material.card.MaterialCardView;
+
+import co.edu.konradlorenz.napa_s.Activities.TaskDetailActivity;
+import co.edu.konradlorenz.napa_s.R;
 
 
 public class ToDoFragment extends Fragment {

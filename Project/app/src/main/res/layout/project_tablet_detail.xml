@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Fragments.ProjectTabletDetailFragment">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/detail_project_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Android Project"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/transparent_text"/>
+
+        <ImageView
+            android:id="@+id/detail_project_image"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/firebase"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/detail_project_percentage_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50% completed"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/transparent_text"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Integrantes:"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bryan Stiven Pinzón Castro"
+                android:textSize="18sp"
+                android:textColor="@color/transparent_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jorge Iván Andrés Contreras"
+                android:textSize="18sp"
+                android:textColor="@color/transparent_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrique David Suárez Guette"
+                android:textSize="18sp"
+                android:textColor="@color/transparent_text"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_project_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@+id/linear"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_done"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

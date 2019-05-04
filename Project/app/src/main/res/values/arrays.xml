@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="placeHolders">
+        <item>@drawable/android</item>
+        <item>@drawable/angular</item>
+        <item>@drawable/c_plus_plus</item>
+        <item>@drawable/csharp</item>
+        <item>@drawable/firebase</item>
+        <item>@drawable/html</item>
+        <item>@drawable/net</item>
+        <item>@drawable/python</item>
+        <item>@drawable/r</item>
+    </array>
+
+    <string-array name="projectNames">
+        <item>Android Project</item>
+        <item>Angular Project</item>
+        <item>C++ Project</item>
+        <item>C# Project</item>
+        <item>Firebase Project</item>
+        <item>HTML Project</item>
+        <item>.NET Project</item>
+        <item>Python Project</item>
+        <item>R Project</item>
+    </string-array>
+
+    <string-array name="percentagesComplete">
+        <item>20% Completed</item>
+        <item>50% Completed</item>
+        <item>30% Completed</item>
+        <item>80% Completed</item>
+        <item>90% Completed</item>
+        <item>60% Completed</item>
+        <item>10% Completed</item>
+        <item>100% Completed</item>
+        <item>70% Completed</item>
+    </string-array>
+</resources>

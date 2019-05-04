@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Our own dimens -->
+        <dimen name="mobile_napa_title_size">30sp</dimen>
+    <!-- -->
+
+
+    <!-- Material Dimens -->
+        <dimen name="fab_margin">50dp</dimen>
+    <!-- -->
+
+</resources>

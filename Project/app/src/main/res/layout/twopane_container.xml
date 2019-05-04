@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/projects_fragment"
+        tools:context=".Activities.ProjectsContainerActivity"
+        android:layout_width="400dp"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/tablet_detail_project_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

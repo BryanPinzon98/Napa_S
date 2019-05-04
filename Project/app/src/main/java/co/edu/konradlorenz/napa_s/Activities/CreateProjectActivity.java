@@ -1,4 +1,4 @@
-package co.edu.konradlorenz.napa_s;
+package co.edu.konradlorenz.napa_s.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,14 +8,17 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class TaskDetailActivity extends AppCompatActivity {
+import co.edu.konradlorenz.napa_s.Fragments.ProjectsFragment;
+import co.edu.konradlorenz.napa_s.R;
+
+public class CreateProjectActivity extends AppCompatActivity {
 
     private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_task_detail);
+        setContentView(R.layout.activity_create_project);
 
         findMaterialElements();
         fabHandler();
@@ -25,15 +28,14 @@ public class TaskDetailActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newIntent = new Intent(TaskDetailActivity.this, SprintsActivity.class);
+                Intent newIntent = new Intent(CreateProjectActivity.this, ProjectsFragment.class);
                 startActivity(newIntent);
-                TaskDetailActivity.this.finish();
+                CreateProjectActivity.this.finish();
             }
         });
     }
 
     public void findMaterialElements(){
-        floatingActionButton = findViewById(R.id.taskDetailFAB);
+        floatingActionButton = findViewById(R.id.createProjectFAB);
     }
-
 }
