@@ -93,12 +93,12 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.MyView
 
                 if(actualContext.getResources().getBoolean(R.bool.has_two_panes)){
 
-                    Toast.makeText(actualContext, "Está en modo Landscape", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(actualContext, "Está en modo Landscape", Toast.LENGTH_SHORT).show();
                     loadProjectDetail(R.id.tablet_detail_project_fragment, manager, newProject);
 
                 }else{
 
-                    Toast.makeText(actualContext, "Está en modo Portrait", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(actualContext, "Está en modo Portrait", Toast.LENGTH_SHORT).show();
                     loadProjectDetail(R.id.projects_fragment, manager, newProject);
                 }
             }

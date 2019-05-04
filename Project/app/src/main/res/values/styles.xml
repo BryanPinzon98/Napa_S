@@ -228,6 +228,18 @@
         <item name="android:hint">@string/input_layout_username_text</item>
     </style>
 
+    <style name="TextInputLayout.LastName">
+        <item name="android:hint">@string/input_layout_lastname_text</item>
+    </style>
+
+    <style name="TextInputLayout.Email">
+        <item name="android:hint">@string/input_layout_email_text</item>
+    </style>
+
+    <style name="TextInputLayout.PasswordTablet">
+        <item name="android:hint">@string/input_layout_password_text</item>
+    </style>
+
     <style name="MatchWrapStyle.TextInputEdit">
         <item name="android:inputType">text</item>
         <item name="android:textSize">14sp</item>
@@ -260,8 +272,29 @@
         <item name="android:hint">@string/input_layout_password_text</item>
     </style>
 
+    <style name="MatchParentStyle.UserRegistration">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:text">New User</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MatchParentStyle.UserRegistration.Port">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="MatchParentStyle.UserRegistration.1">
+        <item name="android:gravity">top|left</item>
+        <item name="android:text">Registration</item>
+    </style>
+
+    <style name="MatchParentStyle.UserRegistration.1.Port">
+        <item name="android:textSize">40sp</item>
+    </style>
+
     <style name="TextInputLayout.Password.tablet">
-        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
     </style>
 
     <style name="MatchWrapStyle.TextInputEdit.Password">

@@ -26,7 +26,7 @@ import co.edu.konradlorenz.napa_s.Fragments.ToDoFragment;
 
 public class SprintsActivity extends AppCompatActivity {
 
-    //private BottomAppBar sprintsBottomAppBar;
+
     private TabItem tab1;
 
     //------ TABS
@@ -44,61 +44,19 @@ public class SprintsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sprints);
-        //setSupportActionBar(sprintsBottomAppBar);
+
 
         findMaterialElements();
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         tabsSetUp();
         setupTabIcons();
     }
 
     public void findMaterialElements(){
-        //sprintsBottomAppBar = findViewById(r.id.bottom_app_bar_sprints_layout);
         toolbar = findViewById(R.id.toolbar);
         viewPager = findViewById(R.id.viewpager);
         tabLayout = findViewById(R.id.tabs);
     }
-
-    /*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(r.menu.bottom_bar_menu, menu);
-        return true;
-    }
-    */
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.app_bar_profile:
-                Intent newIntent = new Intent(SprintsActivity.this, ProfileActivity.class);
-                startActivity(newIntent);
-                Toast.makeText(SprintsActivity.this, "Profile", Toast.LENGTH_SHORT).show();
-                break;
-            /*
-            case android.r.id.home:
-                BottomNavigationDrawerFragment bottomNavigationDrawerFragment = new BottomNavigationDrawerFragment();
-                bottomNavigationDrawerFragment.show(getSupportFragmentManager(), bottomNavigationDrawerFragment.getTag());
-                break;
-            */
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    /*
-    public void runEffectBAB(View view){
-        if (sprintsBottomAppBar.getFabAlignmentMode() == BottomAppBar.FAB_ALIGNMENT_MODE_END) {
-            sprintsBottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_CENTER);
-        } else {
-            sprintsBottomAppBar.setFabAlignmentMode(BottomAppBar.FAB_ALIGNMENT_MODE_END);
-        }
-    }
-    */
-
-    //------------- TABS
 
     public void tabsSetUp(){
         setupViewPager(viewPager);
