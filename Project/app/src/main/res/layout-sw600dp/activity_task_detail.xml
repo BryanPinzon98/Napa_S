@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context=".TaskDetailActivity"
+    tools:context=".Activities.TaskDetailActivity"
     android:padding="30dp">
 
     <LinearLayout
